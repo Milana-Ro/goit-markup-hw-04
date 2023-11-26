@@ -86,18 +86,22 @@ border-bottom: 1px solid #e7e9fc
 header .logo-text {
     color: #2E2F42;
 }
-.navigation .link:hover {
-color: #404BBF;
-}
 .navigation .link {
     color: #2E2F42;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.32px;
-padding-top: 24px;
-padding-bottom: 24px;
-position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
+.navigation .link:hover {
+color: #404BBF;
 }
 .studio .link {
     color: #404BBF;
@@ -129,6 +133,10 @@ position: relative;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.32px;
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
 }
 .contacts .link:hover {
     color: #404BBF;
@@ -183,9 +191,14 @@ position: relative;
     padding-right: 32px;
     padding-bottom: 16px;
     padding-left: 32px;
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
 }
 .button:hover {
     background-color: #404BBF;
+
 }
 .button:focus {
     background-color: #404BBF;
@@ -266,6 +279,7 @@ padding-bottom: 120px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 width: calc((100% - 72px) / 4);
     }
+
 .team-member .name {
     padding-top: 32px;
     padding-bottom: 8px;
@@ -300,10 +314,10 @@ margin-bottom: 32px;
 
 /* doesn't work!! */
 .team-member .icon {
-    fill: red;
+fill: #404BBF;
 }
 .team-member .icon:hover {
-    fill: #03a9f4;
+    fill: #404BBF;
 }
 
 
@@ -330,12 +344,16 @@ color: #2E2F42;
 }
 .portfolio-item {
     width: calc((100% - 48px) / 3);
+    transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
 }
 .portfolio-item:hover {
     border: 1px solid #F4F4FD;
         background: #FFF;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+    }
 .portfolio-list .name {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -387,4 +405,19 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.32px;
 margin-bottom: 16px;
+}
+.footer .social-media-icons {
+    display: flex;
+        justify-content: center;
+        gap: 16px;
+}
+.footer .icon {
+    fill: #4D5AE5;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+}
+.footer .icon:hover {
+    fill: #31D0AA;
 }
