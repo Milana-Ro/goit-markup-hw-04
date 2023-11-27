@@ -96,7 +96,6 @@ header .logo-text {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 }
 .navigation .link:hover {
 color: #404BBF;
@@ -133,7 +132,6 @@ color: #404BBF;
         transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-delay: 0;
 }
 .contacts .link:hover {
     color: #404BBF;
@@ -192,7 +190,6 @@ color: #404BBF;
     transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 }
 .button:hover {
     background-color: #404BBF;
@@ -368,7 +365,6 @@ color: #2E2F42;
     transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 }
 .overlay {
     position: absolute;
@@ -469,6 +465,7 @@ margin-bottom: 16px;
     display: flex;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .social-media-link {
     width: 100%;
@@ -484,7 +481,6 @@ margin-bottom: 16px;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 }
 .footer .social-media-link:hover {
     background-color: #31D0AA;
